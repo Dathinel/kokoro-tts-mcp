@@ -4,6 +4,7 @@
 
 Powered by [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M). Free, fully offline, no API keys, no cloud calls.
 
+[![CI](https://github.com/kalprajsolutions/kokoro-tts-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/kalprajsolutions/kokoro-tts-mcp/actions/workflows/ci.yml)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)](#platform-support)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D18-green)](https://nodejs.org)
@@ -42,7 +43,7 @@ With **auto-speak** enabled, your assistant speaks every response aloud — hand
 
 ### 1. One-time initialization
 
-Downloads model weights (~350 MB, one time) and sets up an isolated Python environment:
+Sets up an isolated Python environment (one-time). Model weights (~350 MB) download from Hugging Face on first use:
 
 ```bash
 npx github:kalprajsolutions/kokoro-tts-mcp init
@@ -157,6 +158,10 @@ Python venv (Kokoro pipeline)     afplay / PowerShell /
 This project is a cross-platform fork of [claude-tts-mcp](https://www.npmjs.com/package/claude-tts-mcp) by [Mitch Hazelhurst](https://github.com/mitchthestonky) — thank you for the excellent original. Modified for Windows/macOS/Linux support by **[Kalpraj Solutions](https://github.com/kalprajsolutions)**; see [NOTICE](NOTICE) for the full change list.
 
 - TTS model: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) by hexgrad (Apache 2.0)
+
+## Community
+
+Questions, setup help, or ideas? Ask in [Discussions](https://github.com/kalprajsolutions/kokoro-tts-mcp/discussions). Bugs and reproducible problems go to [Issues](https://github.com/kalprajsolutions/kokoro-tts-mcp/issues/new?template=bug_report.yml).
 
 ## License
 

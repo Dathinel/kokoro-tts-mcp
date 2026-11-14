@@ -20,7 +20,7 @@ else if (command === "--help" || command === "-h") {
     console.log(`kokoro-tts-mcp - Cross-platform local TTS (Windows, macOS, Linux)
 
 Usage:
-  kokoro-tts-mcp init    Download and set up Kokoro TTS (~200MB, one-time)
+  kokoro-tts-mcp init    Set up Python environment for Kokoro TTS (one-time)
   kokoro-tts-mcp         Start MCP server (used by your MCP client)
 
 Environment variables:
