@@ -1,0 +1,19 @@
+kokoro-tts-mcp
+Copyright 2026 Kalpraj Solutions
+
+This product includes software developed by Mitch Hazelhurst:
+  claude-tts-mcp (https://www.npmjs.com/package/claude-tts-mcp),
+  licensed under the Apache License, Version 2.0.
+
+Modifications made by Kalpraj Solutions (https://github.com/kalprajsolutions):
+  - Cross-platform support: Windows, macOS, and Linux
+    - Platform-aware Python virtualenv paths (venv/Scripts on Windows, venv/bin on POSIX)
+    - Platform-aware audio playback: afplay (macOS), PowerShell Media.SoundPlayer (Windows),
+      paplay / pw-play / aplay / ffplay (Linux)
+    - Platform-aware Python interpreter detection (avoids the Windows Store python3 alias)
+  - zod declared as an explicit dependency
+  - Renamed configuration state directory to ~/.kokoro-tts (TTS_BASE_DIR override kept)
+  - Python interpreter quoted during venv creation (paths with spaces)
+
+This product uses the Kokoro TTS model (https://huggingface.co/hexgrad/Kokoro-82M)
+downloaded at runtime from Hugging Face.
